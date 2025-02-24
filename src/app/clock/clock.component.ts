@@ -15,7 +15,7 @@ export class ClockComponent {
   canvas!: HTMLCanvasElement;
   // ctx = this.renderCanvas2
   ctx!: CanvasRenderingContext2D;
-  id = 0;
+  id : ReturnType<typeof setTimeout> | undefined;
 
   ngAfterViewInit(): void {
     this.canvas = this.renderCanvas2.nativeElement as HTMLCanvasElement;
