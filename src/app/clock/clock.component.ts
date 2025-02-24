@@ -25,10 +25,10 @@ export class ClockComponent {
     radius = radius * 0.9;
 
     // setInterval(this.drawClock, 1000);
-
+    this.drawClock(this.ctx, radius);
     this.id = setInterval(() => {
       this.drawClock(this.ctx, radius);
-    }, 1000);
+    }, 10000);
   }
   drawClock(ctx: CanvasRenderingContext2D, radius: number) {
     this.drawFace(this.ctx, radius);
@@ -93,8 +93,8 @@ export class ClockComponent {
     minute = (minute * Math.PI) / 30 + (second * Math.PI) / (30 * 60);
     this.drawHand(ctx, minute, radius * 0.8, radius * 0.07);
     // second
-    second = (second * Math.PI) / 30;
-    this.drawHand(ctx, second, radius * 0.9, radius * 0.02);
+    // second = (second * Math.PI) / 30;
+    // this.drawHand(ctx, second, radius * 0.9, radius * 0.02);
   }
 
   drawHand(
