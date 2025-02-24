@@ -1,3 +1,20 @@
+
+
+# deploy to gh pages
+- npm run build
+- commit dist
+- npm run deploy
+
+!> run dist local with http-server,.. will fail cause base-href is set for gh-pages   
+
+- material examples from:
+- canvas clock
+
+## canvas clock
+
+
+---
+
 # AngularMaterial3
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0-next.4.
