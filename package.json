@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /mat-playground/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "static": "http-server dist/angular-material-3/browser",
+    "deploy": "git subtree split --prefix dist/angular-material-3/browser -b gh-pages && git push -f origin gh-pages:gh-pages"
   },
   "private": true,
   "dependencies": {
