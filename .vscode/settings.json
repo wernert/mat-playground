@@ -1,0 +1,7 @@
+{
+  "explorer.decorations.badges": false,
+  "search.useIgnoreFiles": true,
+  "search.exclude": {
+    "dist": true
+  }
+}
