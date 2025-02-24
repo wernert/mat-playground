@@ -9,18 +9,17 @@ import { MatCardModule } from '@angular/material/card';
 
 
 @Component({
-  selector: 'app-address-form',
-  templateUrl: './address-form.component.html',
-  styleUrl: './address-form.component.scss',
-  standalone: true,
-  imports: [
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
-    ReactiveFormsModule
-  ]
+    selector: 'app-address-form',
+    templateUrl: './address-form.component.html',
+    styleUrl: './address-form.component.scss',
+    imports: [
+        MatInputModule,
+        MatButtonModule,
+        MatSelectModule,
+        MatRadioModule,
+        MatCardModule,
+        ReactiveFormsModule
+    ]
 })
 export class AddressFormComponent {
   private fb = inject(FormBuilder);

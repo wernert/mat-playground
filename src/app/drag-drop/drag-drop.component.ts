@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { CdkDrag, CdkDropList, CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'app-drag-drop',
-  templateUrl: './drag-drop.component.html',
-  styleUrl: './drag-drop.component.scss',
-  standalone: true,
-  imports: [CdkDrag, CdkDropList]
+    selector: 'app-drag-drop',
+    templateUrl: './drag-drop.component.html',
+    styleUrl: './drag-drop.component.scss',
+    imports: [CdkDrag, CdkDropList]
 })
 export class DragDropComponent {
   todo = [

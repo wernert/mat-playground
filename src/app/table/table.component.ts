@@ -5,11 +5,10 @@ import { MatSortModule, MatSort } from '@angular/material/sort';
 import { TableDataSource, TableItem } from './table-datasource';
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrl: './table.component.scss',
-  standalone: true,
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule]
+    selector: 'app-table',
+    templateUrl: './table.component.html',
+    styleUrl: './table.component.scss',
+    imports: [MatTableModule, MatPaginatorModule, MatSortModule]
 })
 export class TableComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
