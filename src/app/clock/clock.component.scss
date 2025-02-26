@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+  background-color: antiquewhite;
+  width: 500px;
+  height: 500px;
+  // transform-origin: left top;
+  // transform: scale(1.5); pixel !
+
+}
+.float-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}

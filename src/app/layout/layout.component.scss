@@ -7,6 +7,9 @@
   padding: 0 8px;
   box-sizing: border-box;
 }
+#sidenav-toggle{
+  z-index: 10;
+}
 
 .mat-toolbar.mat-primary {
   position: sticky;
