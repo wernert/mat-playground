@@ -2,7 +2,9 @@
 
 # deploy to gh pages
 - npm run build
-- commit dist
+- commit dist:
+  - git add dist/angular-material-3
+  - git commit -m 'build'
 - npm run deploy
 
 !> run dist local with http-server,.. will fail cause base-href is set for gh-pages   
