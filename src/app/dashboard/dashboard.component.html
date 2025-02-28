@@ -2,6 +2,7 @@
   <h1 class="mat-h1">Dashboard</h1>
 
   <mat-grid-list cols="2" rowHeight="350px">
+
     <mat-grid-tile [colspan]="2" [rowspan]="1">
       <mat-card class="dashboard-card">
         <mat-card-header>
@@ -18,13 +19,44 @@
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
           <div>
-            <button mat-icon-button class="" (click)="openWin()" aria-label="Toggle menu">
+            <button mat-fab extended (click)="openWin()" aria-label="Toggle menu">
               <mat-icon>schedule</mat-icon>
+              simple clock 1
             </button>
           </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-card class="dashboard-card variant2">
+        <mat-card-header>
+          <mat-card-title>
+            todo
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="card-text-content">
+          <div>
+            <ul>
+              <li>theme switcher</li>
+              <li>text cards from md / db</li>
+              <li>more clocks</li>
+              <li>drag  & drop extendet: </li>
+              <li>breakpoint glitch depending on display : glitch on HD, not on 4k</li>
+            </ul>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
     @for (card of cards | async; track card) {
       <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
         <mat-card class="dashboard-card">
