@@ -54,4 +54,12 @@ export const routes: Routes = [
       ),
       title: 'clock'
   },
+  {
+    path: 'magi',
+    loadComponent: () =>
+      import('./magi/magi.component').then(
+        (c) => c.MagiComponent
+      ),
+      title: 'magi'
+  },
 ];
